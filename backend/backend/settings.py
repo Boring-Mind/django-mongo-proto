@@ -111,8 +111,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Using Argon2id as the only password hasher
-PASSWORD_HASHERS = ["django.contrib.auth.hashers.Argon2PasswordHasher"]
+# Using Argon2id as the only password hasher for better security
+PASSWORD_HASHERS = ["common.Argon2OwaspPasswordHasher"]
 
 AUTH_USER_MODEL = "user.User"
 
