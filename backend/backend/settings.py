@@ -88,6 +88,10 @@ DATABASES = {
     }
 }
 
+# MongoDB connection settings
+MONGO_CONNECTION_STRING = get_env_variable("MONGO_CONNECTION_STRING")
+MONGO_DB_NAME = get_env_variable("MONGO_DB_NAME")
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
