@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Using Argon2id as the only password hasher for better security
-PASSWORD_HASHERS = ["common.Argon2OwaspPasswordHasher"]
+PASSWORD_HASHERS = ["common.password_hashers.Argon2OwaspPasswordHasher"]
 
 AUTH_USER_MODEL = "user.User"
 
